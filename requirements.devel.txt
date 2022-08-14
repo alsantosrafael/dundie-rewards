@@ -5,5 +5,9 @@ ipdb
 pudb
 pytest-watch
 
+# code quality
+flake8
+pyproject-flake8
+
 # Install project as editable
 -e .
