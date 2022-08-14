@@ -1,4 +1,4 @@
-requirements.dev.txt
+requirements.devel.txt
 # dev dependencies
 ipython>=7.0.0,<=8.0.0
 ipdb
@@ -6,8 +6,10 @@ pudb
 pytest-watch
 
 # code quality
-flake8
+flake8==4.0.1
 pyproject-flake8
+black
+isort
 
 # Install project as editable
 -e .
