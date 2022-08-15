@@ -10,9 +10,7 @@ fmt = logging.Formatter(
 )
 
 
-def get_logger(
-    logfile="dundie.log"
-) -> logging.Logger:
+def get_logger(logfile="dundie.log") -> logging.Logger:
     """Returns a configured logger."""
     # ch = logging.StreamHandler()  # Console/terminal/stderr
     # ch.setLevel(log_level)

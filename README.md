@@ -17,7 +17,7 @@ pip install seunome-dundie`
 ```
 
 ```py
-pip install -e `.[dev]`
+pip install -e `.[devel]`
 ```
 
 ## Usage
