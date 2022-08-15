@@ -19,7 +19,7 @@ ipython:
 		@.venv/bin/ipython
 
 test:
-		@.venv/bin/pytest -s
+		@.venv/bin/pytest -s -vvv
 
 watch:
 		@.venv/bin/ptw -- -vv -s tests/
