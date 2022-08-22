@@ -14,7 +14,7 @@ max-line-length = 79
 
 [tool.black]
 line-length = 79
-target-version = ["py36", "py37", "py38"]
+target-version = ["py36", "py37"]
 exclude = '''
 /(
     \.eggs
