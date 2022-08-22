@@ -57,12 +57,19 @@ def set_initial_password(db, pk):
 
 
 def set_initial_balance(db, pk, person):
-    """Add movement and set initial balance"""
+    """Adds movement and set initial balance"""
     value = 100 if person["role"] == "Manager" else 500
     add_movement(db, pk, value)
 
 
 def add_movement(db, pk, value, actor="system"):
+    """Adds movement to user account.
+
+    Example::
+
+        add_movement(db, "me@me.com.br", 100, "me")
+
+    """
     movements = db["movement"].setdefault(pk, [])
     movements.append(
         {"date": datetime.now().isoformat(), "actor": actor, "value": value}
