@@ -19,10 +19,10 @@ ipython:
 		@.venv/bin/ipython
 
 test:
-		@.venv/bin/pytest -s -vvv
+		@.venv/bin/pytest -s -vvv --forked
 
 watch:
-		@.venv/bin/ptw -- -vv -s tests/
+		@.venv/bin/ptw -- -vv -s --forked tests/
 
 clean:
 		@find ./ -name '*.pyc' -exec rm -f {} \;
