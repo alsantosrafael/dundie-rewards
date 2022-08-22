@@ -1,4 +1,12 @@
-.PHONY: install virtualenv ipython clean test pflake8 fmt lint
+.PHONY: install virtualenv ipython clean test pflake8 fmt lint watch, docs, docs-serve
+
+docs:
+		@mkdocs build --clean
+
+
+docs-serve:
+		@mkdocs serve
+
 
 install:
 		@echo "Installing for dev environment"

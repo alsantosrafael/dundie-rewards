@@ -1,3 +1,4 @@
+"""Setup for dundie."""
 import os
 from setuptools import setup, find_packages
 
@@ -20,7 +21,7 @@ def read_requirements(path):
     return [
         line.strip()
         for line in read(path).split("\n")
-        if not line.startswith(("#", "git+", '"', '-'))
+        if not line.startswith(("#", "git+", '"', "-"))
     ]
 
 
@@ -29,18 +30,14 @@ setup(
     version="0.1.0",
     description="Reward Point System for Dunder Mifflin Company",
     long_description=read("README.md"),
-    long_description_content_type='text/markdown',
+    long_description_content_type="text/markdown",
     author="Rafael Almeida",
     python_requires=">=3.8",
     packages=find_packages(),
-    entry_points={
-        "console_scripts": [
-            "dundie = dundie.__main__:main"
-        ]
-    },
+    entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
     install_requires=[""],
     extras_require={
         "test": read_requirements("requirements.test.txt"),
-        "dev": read_requirements("requirements.devel.txt")
-    }
+        "dev": read_requirements("requirements.devel.txt"),
+    },
 )
