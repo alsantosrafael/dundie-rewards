@@ -13,7 +13,9 @@ isort
 
 # docs
 mkdocs
-mkdocs-gitbook
+
+# build
+wheel
 
 # Install project as editable
 -e .

@@ -13,7 +13,7 @@ Os dados dos funcionários atuais serão fornecidos em um arquivo que pode ser n
 ## Installation
 
 ```py
-pip install seunome-dundie`
+pip install rafael-almeida-dundie`
 ```
 
 ```py
