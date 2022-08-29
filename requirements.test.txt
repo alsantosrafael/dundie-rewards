@@ -7,3 +7,7 @@ isort
 click
 rich
 rich-click
+mypy
+types-setuptools
+sqlalchemy==1.4.35
+sqlmodel
