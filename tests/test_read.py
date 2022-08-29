@@ -61,5 +61,5 @@ def test_read_only_one_dept():
 @pytest.mark.unit
 def test_read_only_one_person():
     load(PEOPLE_FILE)
-    result = read(email="jim@dundlermifflin.com")
+    result = read(email="jim@dundermifflin.com")
     assert len(result) == 1

@@ -55,10 +55,10 @@ def test_add_balance_for_dept():
 @pytest.mark.unit
 def test_add_balance_for_person():
     load(PEOPLE_FILE)
-    original = read(email="jim@dundlermifflin.com")
+    original = read(email="jim@dundermifflin.com")
 
-    add(-30, email="jim@dundlermifflin.com")
+    add(-30, email="jim@dundermifflin.com")
 
-    modified = read(email="jim@dundlermifflin.com")
+    modified = read(email="jim@dundermifflin.com")
     for index, person in enumerate(modified):
         assert person["balance"] == original[index]["balance"] - 30
